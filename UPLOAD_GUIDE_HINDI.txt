@@ -1,0 +1,18 @@
+KANTA DATA LOGGER — GitHub se APK (Android Studio ke bina)
+
+1) New repo banao: https://github.com/new  naam: kanta-data-logger
+2) Zip extract karke andar ki files ko repo root mein upload karo (zip directly mat upload karo)
+3) Agar folders upload nahi ho rahe, repo > Add file > Create new file mein poora filename likho:
+   .github/workflows/build.yml
+   app/build.gradle
+   app/src/main/AndroidManifest.xml
+   app/src/main/java/com/example/kantalogger/MainActivity.java
+   build.gradle
+   settings.gradle
+   README.md
+4) Har file ke liye download ki hui ZIP mein same path ki file ka code paste karo, Commit changes karo.
+5) Actions > Build Kanta Data Logger APK > latest success run > Artifacts > Kanta-Data-Logger-APK download.
+6) Phone par app kholkar permission allow; Classic scale: pehle Bluetooth Settings mein pair, app Refresh paired, Connect SPP; BLE scale: Scan BLE, select, Connect BLE.
+7) Kante ko 0kg, 5kg, 20kg pe test karo. Export TXT dabao aur mujhe TXT + model/photo bhejo.
+
+Note: Receiver APK directly yahan compile nahi hui; GitHub Actions se compile hogi.
